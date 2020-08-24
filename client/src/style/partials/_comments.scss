@@ -1,0 +1,179 @@
+.comments {
+  padding: 0 1rem 0;
+
+  &__comment-count {
+    margin-bottom: 2rem;
+    font-family: 'AvenirNext-demi-bold';
+    font-size: $sub-header-font-m;
+    color: $secondary;
+  }
+
+  &__input-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__user {
+    margin: 1rem 1rem 0 0;
+  }
+
+  &__tablet-flex-wrapper {
+    width: 100%;
+  }
+
+  &__input-wrapper {
+    width: 100%;
+  }
+
+  &__input-label {
+    font-size: $labels-font-m;
+    font-family: 'AvenirNext-demi-bold';
+    text-transform: uppercase;
+    color: $silver;
+  }
+
+  &__input-field {
+    width: 100%;
+    min-height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: $alabaster;
+    border: 2px solid $primary;
+  }
+
+  &__btn {
+    margin-bottom: 1.5rem;
+  }
+
+  &__img {
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  &__header-name {
+    font-family: 'AvenirNext-bold';
+  }
+
+  &__header-date {
+    color: $silver;
+  }
+
+  &__comment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    border-bottom: 1px solid $mercury;
+    padding-bottom: 2rem;
+  }
+
+  &__comment {
+    border-top: 1px solid $mercury;
+    padding-top: 2rem;
+    margin-top: 0;
+  }
+
+  &__img {
+    margin-right: 1rem;
+  }
+
+  &__contents-container {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    width: 100%;
+  }
+
+  @include tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &__comment-count {
+      font-size: $sub-header-font-dt;
+    }
+
+    &__input-cont {
+      justify-content: initial;
+    }
+
+    &__user {
+      margin-right: 1.5rem;
+    }
+
+    &__input-wrapper {
+      width: 27.5rem;
+      margin-right: 1rem;
+    }
+
+    &__input-label {
+      font-size: $para-comm-font-dt;
+    }
+
+    &__input-field {
+      width: 27.5rem;
+      min-height: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__tablet-flex-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: initial;
+    }
+
+    &__btn {
+      width: 10rem;
+      max-height: 3rem;
+      margin-bottom: 0.2rem;
+    }
+
+    &__comment-one {
+      margin-top: 0;
+    }
+
+    &__comment {
+      justify-content: initial;
+    }
+
+    &__img {
+      margin-right: 1rem;
+    }
+
+    &__header {
+      justify-content: initial;
+    }
+
+    &__header-name {
+      margin-right: 0.5rem;
+    }
+
+    &__body {
+      min-width: 39rem;
+    }
+  }
+
+  @include desktop {
+    padding: 0 0 0 11.25rem;
+    width: 44.5rem;
+
+    &__input-field {
+      width: 27.25rem;
+    }
+
+    &__comment {
+      width: 100%;
+      padding-right: 1rem;
+    }
+
+    &__comments-wrapper {
+      width: 46rem;
+    }
+  }
+}

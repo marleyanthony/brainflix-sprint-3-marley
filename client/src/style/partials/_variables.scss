@@ -1,0 +1,49 @@
+// breakpoints 
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1440px;
+
+
+// colors 
+$primary: #0095ff;
+$primary-hover: #0065ad;
+$secondary: #323232;
+$white: #ffffff;
+$nav-bg-fill: #323232;
+$silver: #afafaf;
+$mercury: #e1e1e1;
+$alabaster: #fafafa;
+
+
+// font sizes 
+// (dt = desktop | t = tablet | m = mobile) 
+
+// font sizes - dt / t 
+$hero-font-dt: 3.75rem;
+$h1-header-font-dt: 2.25rem;
+$h2-header-font-dt: 1.5rem;
+$sub-header-font-dt: 1rem;
+$para-comm-font-dt: 0.875rem;
+$lists-cont-font-dt: 0.875rem;
+$labels-font-dt: 0.75rem;
+
+// font sizes - m 
+$header-font-m: 1.5rem;
+$sub-header-font-m: 0.875rem;
+$para-font-m: 0.8125rem;
+$lists-cont-font-m: 0.8125rem;
+$labels-font-m: 0.75rem;
+
+// Line heights (lh = line height)
+$header-lh-m: 2rem;
+$subheader-lh-m: 1.375rem;
+$para-lh-m: 1.125rem;
+$lists-cont-lh-m: 1.125rem;
+$labels-lh-m: 1.25rem;
+
+$hero-lh-dt: 4.25rem;
+$h1-header-lh-dt: 2.75rem;
+$h2-header-lh-dt: 2rem;
+$sub-header-lh-dt: 1.5rem;
+$para-cont-lh-dt: 1.375rem;
+$lists-cont-lh-dt: 1.25rem;
+$labels-lh-dt: 1.25rem;

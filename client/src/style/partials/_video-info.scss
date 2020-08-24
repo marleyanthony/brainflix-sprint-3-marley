@@ -1,0 +1,92 @@
+.video-info {
+  padding: 2rem 1rem 2.5rem;
+
+  &__flex-wrapper {
+  border-bottom: 1px solid $mercury;
+  }
+
+  &__heading {
+    font-family: 'AvenirNext-bold';
+    margin-bottom: 1rem;
+  }
+
+  &__name-cont {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    font-family: 'AvenirNext-bold';
+    margin-right: 0.5rem;
+  }
+
+  &__date {
+    color: $silver;
+  }
+
+  &__views-cont {
+    display: flex;
+    padding-bottom: 1.5rem;
+  }
+
+  &__views-wrapper {
+    margin-right: 1rem;
+  }
+
+  &__views-wrapper,
+  &__likes-wrapper {
+    display: flex;
+  }
+
+  &__views-icon,
+  &__likes-icon {
+    margin-right: 0.5rem;
+  }
+
+  &__views-count, 
+  &__likes-count {
+    color: $secondary;
+  }
+
+  &__description {
+    margin-top: 1.5rem;
+  }
+
+  @include tablet {
+    padding: 3rem 1.5rem 4rem;
+
+    &__flex-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__heading {
+      margin-bottom: 1.5rem;
+      font-size: $h1-header-font-dt;
+    }
+
+    &__name-cont {
+      margin-bottom: 1.5rem;
+    }
+
+    &__description {
+      width: 32rem;
+    }
+  }
+
+  @include desktop {
+    padding-left: 11.25rem;
+    padding-right: 0;
+    width: 57.2rem;
+    margin-right: 0;
+
+    &__heading {
+      width: 100%;
+    }
+ 
+  &__likes-count {
+    padding-right: 2rem;
+  }
+  }
+}

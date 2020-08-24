@@ -1,0 +1,19 @@
+// utility button 
+.btn-u {
+  border-radius: 4px;
+  border: none;
+  background-color: $primary;
+  color: $white;
+  text-transform: uppercase;
+  width: 13.88rem;
+  height: 3rem;
+  padding: 1rem 2rem;
+  font-family: 'AvenirNext-bold';
+  font-size: 1rem;
+}
+
+// user img 
+.user-u {
+    height: 3rem;
+    border-radius: 50%;
+  }
