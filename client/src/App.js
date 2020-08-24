@@ -22,6 +22,8 @@ class App extends Component {
 
     const { params } = this.props.match;
 
+    console.log(this.props.match);
+
     if (
       params.id !== undefined &&
       prevState.videoData.id !== params.id
@@ -66,7 +68,7 @@ class App extends Component {
         <Hero videoData={this.state.videoData} />
         <VideoInfo videoData={this.state.videoData} />
         <Comments videoComments={this.state.videoData.comments} />
-        <VideoList videoList={this.state.videoList} />
+        <VideoList videoList={this.state.videoList} params={this.props.match} />
       </div>
     );
   }

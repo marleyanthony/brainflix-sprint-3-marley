@@ -4,9 +4,9 @@ import VideoItem from './VideoItem';
 
 function VideoList(props) {
   // console.log(props.videoList);
-  // console.log(props);
+  // console.log(props.params.params.id);
 
-  // const { id } = props.videoList;
+  const { url } = props.params;
 
   return (
     <>
@@ -14,18 +14,12 @@ function VideoList(props) {
         <h5 className="video-list__header">
           Next Video
         </h5>
-        {/* props.videoList
-            .filter(function (id) {
-              return id !== this.props.params.id;
-            })
-            .map((video, id) => (
-              <VideoItem key={id} videoList={video} />
-            )) */}
-
         {
-          props.videoList.map((video) => (
-            <VideoItem key={video.id} videoList={video} />
-          ))
+          props.videoList
+            .filter(video => video.id !== props.params.params.id)
+            .map((video) => (
+              <VideoItem key={video.id} videoList={video} />
+            ))
         }
       </ul>
     </>
