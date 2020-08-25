@@ -22,7 +22,7 @@ class App extends Component {
 
     const { params } = this.props.match;
 
-    console.log(this.props.match);
+    // console.log(this.props.match);
 
     if (
       params.id !== undefined &&
@@ -41,7 +41,7 @@ class App extends Component {
     axios
       .get('http://localhost:5000/videos')
       .then((response) => {
-        console.log(response.data)
+        // console.log(response.data)
         const videos = response.data;
         this.setState(
           { videoList: videos }

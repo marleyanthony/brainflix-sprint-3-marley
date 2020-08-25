@@ -3,8 +3,7 @@ import CommentItem from './CommentItem';
 import User from '../assets/imgs/user.jpg';
 
 function Comments(props) {
-
-  // console.log(props);
+  console.log(props.videoComments);
 
   const { videoComments } = props;
 

@@ -6,7 +6,7 @@ function VideoList(props) {
   // console.log(props.videoList);
   // console.log(props.params.params.id);
 
-  const { url } = props.params;
+  // const { url } = props.params;
 
   return (
     <>
